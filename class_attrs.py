@@ -1,4 +1,6 @@
 
+import inspect
+
 class cls(object):
     
     def attr_gen(self):
