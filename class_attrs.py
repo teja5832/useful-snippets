@@ -1,5 +1,7 @@
 
 import inspect
+import traceback
+
 
 class cls(object):
     
@@ -15,6 +17,7 @@ class cls(object):
         nprint('\n\n')
         
     def nprint(farg, *args):
+        print ''.join(traceback.format_stack())
         print farg
         for arg in args:
           print arg
